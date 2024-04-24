@@ -5,7 +5,7 @@ export default class Peso extends React.Component{
     super(props)
 
   }
-  render(props){
+  render(){
     return(
       <div>
         <label>Peso</label>

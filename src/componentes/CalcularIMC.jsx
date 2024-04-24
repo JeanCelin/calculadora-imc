@@ -1,15 +1,16 @@
 import React from "react";
 
 export default class Altura extends React.Component{
-  constructor(props){
-    super(props)
-    
-   this.calc=()=>{
-      this.props.sr(this.props.p/(this.props.a*this.props.a))
-    }
-    
+  constructor(){
+    super()
+    this.calc=this.fcalc.bind(this)
   }
-  
+    
+  fcalc=()=>{
+    const r=this.props.p/(this.props.a*this.props.a)
+    this.props.sr(r)
+  }
+    
   render(){
     return(
       <div>
